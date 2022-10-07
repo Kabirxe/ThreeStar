@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148, 114, 2) rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(143, 122, 0);
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+}
+body{
+    overflow-x: hidden;
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.logo{
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+}
+.logo:hover{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    text-align: center;
+    width: 30%;
+    justify-content: right;
+}
+.nav-links li{
+    width: 50%;
+    list-style: none;
+}
+.nav-links li a{
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.nav-links li a:hover{
+    text-decoration: none;
+    color: black;
+}
+div{
+    justify-content: center;
+    height: 100vh;
+    font-weight: bold;
+}
+.main{
+    background: rgba(255, 255, 255, 0.377);
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+.main h1{
+    text-align: center;
+}
+.main h3{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.payment{
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+}
+.ccard{
+    display: none;
+}
+.ccard span{
+    margin: 15px;
+    font-size: 15px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+.number{
+    display: flex;
+    justify-content: center;
+}
+.ec{
+    display: flex;
+}
+.amount{
+    display: flex;
+    justify-content: center;
+}
+.ccard button{
+    padding: 6px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #b18700;
+    color: white;
+    font-weight: bold;
+}
+.easypaisa{
+    display: none;
+}
+.jazzcash{
+    display: none;
+}
+.p-selection{
+    width: 50%;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+}
+.p-selection button{
+    background: #b18700;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    width: 50%;
+}
+.p-info{
+    width: 50%;
+    text-align: center;
+    margin: 100px auto;
+}
+.upload{
+    background: #b18700;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+.dropbtn {
+    background-color: #b18700;
+    color: white;
+    padding: 13px;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #b18700;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    z-index: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.dropdown-content button{
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    width: 100%;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: #b18700;
+    transition: 0.2s;
+}
+
+.dropdown-content button:hover {
+    transform: scale(1.1);
+    background-color: #b18700;
+    border-radius: 10px;
+}
+
+.show {
+    display: block;
+}
+h2{
+    background-color: white;
+    padding: 16px;
+    font-size: 28px;
+    border-radius: 10px;
+}
+.div1{
+    background-image: url(bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div2{
+    width: 100%;
+}
+.content-1{
+    display: flex;
+}
+.cntnt1-img{
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+}
+.cntnt1-txt{
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(div2pic2.jpg);
+    background: linear-gradient(0,0,0,);
+    width:50%;
+}
+
+.cntnt1-txt h1{
+    color: white;
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.txt{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    transform: translate(-0%,-20%);
+}
+.txt p span{
+    font-size: 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 3px;
+}
+.txt p{
+    color: white;
+    text-align: center;
+}
+.div3{
+    height: 400px;
+    background-image: url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.div3 h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+}
+.div4{
+    background: rgb(121, 73, 1);
+    color: white;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+.div4 p{
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+.social{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 200px;
+    width: 100%;
+    background: rgb(59, 39, 1);
+}
+.links {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;   
+}
+.f-details{
+    display: flex;
+    height: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+.f-details div{
+    height: 100px;
+}
+.company-info h4{
+    font-weight: bold;
+}
+.f-details ul li{
+    list-style: none;
+}
+.f-details ul li a{
+    color: white;
+}
+.sm-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+.sm-links ul li a{
+    font-size: 30px;
+    transition: 0.8s;
+}
+.sm-links ul li a:hover{
+    color: #ad6a05;
+}
+.webmap ul li a{
+    transition: 0.8s;
+    text-decoration: none;
+}
+.webmap ul li a:hover{
+    color: #ad6a05;
+}

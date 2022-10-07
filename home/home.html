@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home-responsive.css">
+    <script src="https://kit.fontawesome.com/71d0ea7f2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <i class="fa-solid fa-star"></i>&nbsp;<i class="fa-solid fa-star"></i>&nbsp;<i class="fa-solid fa-star"></i>
+        </div>
+        <div class="links-area" id="menu">
+            <i class="fa-solid fa-xmark" id="close" onclick="closemenu()"></i>
+            <ul class="nav-links">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+            <div class="user-area">
+                <div class="drop-down">
+                    <a href="" class="set-pad"><span class="material-symbols-outlined">
+                            Search
+                        </span></a>
+                    <div class="dropdown_content_search">
+                        <input type="search" name="" id="" placeholder="Search">
+                        <br>
+                    </div>
+                </div>
+                <div class="drop-down">
+                    <a href="../loginform/login.html"><span class="material-symbols-outlined drop-btn">
+                            account_circle
+                        </span></a>
+                    <div class="dropdown_content login-form">
+                        <br>
+                        <h5>LOGIN</h5>
+                        <br>
+                        <div class="credentials">
+                            Email:
+                            <input type="email" name="" id="">
+                            <br>
+                            Password:
+                            <input type="password" name="" id="">
+                            <br>
+                        </div>
+                        <div class="form-btn"><button>LOGIN</button><br>
+                            <button>SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-down">
+                    <a href="../cart/cart.html" class="set-pad"><span class="material-symbols-outlined">
+                            shopping_cart
+                        </span></a>
+                    <div class="dropdown_content">
+                        <h5>CART</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc-icon">
+            <i class="fa-sharp fa-solid fa-bars" id="open" onclick="showmenu()"></i>
+        </div>
+    </nav>
+    <!-- END HERE -->
+    <div class="main-text">
+        <div class="text-box">
+            <div id="fly-in">
+                <div><span>Welcome To</span>Three Star Official</div>
+                <div><span>Checkout our</span>Ocean Project</div>
+                <div><span>And Our</span> Tree Project</div>
+                <div><span>Also</span> Charity Project</div>
+                <div><span>And </span>Don't Forget</div>
+                <div><span>To checkout</span> ThreeStar Offical Store</div>
+                <div><span>For Special </span>Discount Offers</div>
+                <div><span>Free Delivery on Orders</span> Over 2000</div>
+            </div>
+        </div>
+    </div>
+    <div class="links-box">
+        <div class="box-row">
+            <div class="ocean-box wl">
+                <a href="../ocean/ocean.html"><span class="links-txt">Ocean</span></a>
+            </div>
+            <div class="tree-box wl">
+                <a href="../tree/tree.html"><span class="links-txt">Tree</span></a>
+            </div>
+        </div>
+        <div class="box-row ">
+            <div class="charity-box wl">
+                <a href="../charity/charity.html"><span class="links-txt">Charity</span></a>
+            </div>
+            <div class="store-box wl">
+                <a href="../store/index.html"><span class="links-txt">Store</span></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- FOOTER PART STARTS HERE -->
+    <footer>
+        <div class="subscribe-box">
+            <div class="subs">
+                <br>
+                <h2>STAY IN TOUCH WITH US</h2>
+                <br>
+                <h6>Get the limited/exclusive offers through email!</h6>
+                <br>
+                <div class="subs-input">
+                    <input type="text" name="" id="" placeholder="ENTER YOUR EMAIL">
+                    &nbsp;&nbsp;&nbsp;<button class="subs-btn" id="subs" onclick="subscribe()">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="webmap-box">
+            <div class="first-row">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../ocean/ocean.html" class="ocean">Ocean</a></li>
+                <li><a href="../tree/tree.html" class="tree">Tree</a></li>
+                <li><a href="../charity/charity.html" class="charity">Charity</a></li>
+                <li><a href="../store/index.html" class="store">Store</a></li>
+            </div>
+            <br>
+        </div>
+        <p class="rights-p"> <span class="rights"> © ThreeStar, Co. All rights reserved.</span></p>
+    </footer>
+    <!-- ENDS HERE -->
+    <script src="home.js"></script>
+</body>
+
+</html>

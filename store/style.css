@@ -1,0 +1,660 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(61, 61, 66) rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(64, 64, 70);
+  border-radius: 30px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(211, 211, 211);
+}
+
+.nav-bar {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(31, 35, 39);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.logo {
+  position: relative;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo::after {
+  content: 'ThreeStar';
+  position: absolute;
+  bottom: -20px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.logo i {
+  font-size: 30px;
+  color: white;
+}
+
+.links-area {
+  width: 80%;
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  width: 70%;
+  line-height: 40px;
+  justify-content: space-evenly;
+}
+
+.user-area {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.user-area .drop-down span {
+  line-height: 40px;
+}
+
+/* SEARCH */
+.drop-down {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+
+.drop-down span {
+  color: white;
+}
+
+.dropdown_content_search {
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  top: 150%;
+  left: 30%;
+  right: 10%;
+  transform: translate(-50%);
+  min-width: 180px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.dropdown_content_search input[type=search] {
+  border-radius: 20px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.drop-down:hover .dropdown_content_search {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SEARCH END */
+.set-pad {
+  margin-right: 10px;
+}
+
+.user-area a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/* LOGIN */
+.drop-down {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+
+.drop-down button {
+  background: transparent;
+  border: none;
+}
+
+.drop-btn {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: none;
+}
+
+.drop-btn a {
+  text-align: center;
+}
+
+.drop-btn a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.dropdown_content {
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  right: 10%;
+  transform: translate(-50%);
+  background-color: #cccccc;
+  min-width: 180px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.dropdown_content h5 {
+  color: black;
+  letter-spacing: 6px;
+  font-weight: bolder;
+}
+
+.dropdown_content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
+.dropdown_content a:hover {
+  background-color: rgb(10, 0, 0);
+  color: white;
+}
+
+.drop-down:hover .dropdown_content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.drop-down:hover .drop-btn {
+  background-color: transparent;
+}
+
+/* LOGIN END */
+.credentials {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.form-btn {
+  padding: 10px;
+}
+
+.credentials input[type=password] {
+  border: none;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.credentials input[type=email] {
+  border: none;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.form-btn button {
+  padding: 5px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+}
+
+.sc-icon i {
+  font-size: 35px;
+}
+
+#close {
+  display: none;
+}
+
+/* Cart */
+.dropdown {
+  position: relative;
+  z-index: 4;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.dropbtn a {
+  text-align: center;
+}
+
+.dropbtn a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-content {
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.dropdown-content h6 {
+  font-size: 11px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(10, 0, 0);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+#open {
+  display: none;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.i::after {
+  position: absolute;
+  content: "︾";
+  z-index: 19;
+  padding-top: 3px;
+  padding-left: 8px;
+}
+
+.sub-nav {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.sub-nav a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+  transition: 0.1s ease-in-out;
+}
+
+.sub-nav li {
+  list-style: none;
+}
+
+.text-box {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  cursor: default;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+svg {
+  display: block;
+  font: 8.5rem 'Montserrat';
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 2px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #000000;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #000000;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #000000;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #000000;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #000000;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+.text-box h2 {
+  text-align: center;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px black;
+  font: 1.5em 'Montserrat';
+
+
+}
+
+.main {
+  width: 100%;
+}
+
+.text-box-2 {
+  width: 100%;
+  text-align: center;
+}
+
+.text-box-2 h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card {
+  text-align: center;
+  width: 30%;
+  transition: 1s;
+  position: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card h4 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card button {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btns a {
+  text-decoration: none;
+  color: black;
+}
+
+.card button:hover {
+  transform: scale(1.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-text {
+  transition: 0.8s;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.product-text {
+  opacity: 0;
+}
+
+.card:hover .product-text {
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgba(116, 116, 116, 0.411);
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+footer a {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer li {
+  list-style: none;
+}
+
+.subscribe-box {
+  background-color: rgb(31, 35, 39);
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.subs h2 {
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.subs h6 {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.subs-input {
+  display: flex;
+  justify-content: center;
+}
+
+.subs-input input[type=text] {
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.subs-input button {
+  padding: 10px;
+  border: none;
+  background-color: red;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.webmap-box {
+  background-color: rgb(31, 35, 39);
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.first-row {
+  padding: 20px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.first-row a {
+  text-decoration: none;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.cat-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.cat-links a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.webmap-box .ocean {
+  color: rgb(70, 227, 238);
+}
+
+.webmap-box .tree {
+  color: rgb(79, 223, 134);
+}
+
+.webmap-box .charity {
+  color: rgb(255, 204, 146);
+}
+
+.webmap-box .store {
+  color: rgb(255, 172, 172);
+}
+
+.third-row {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.social-links {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.social-links a {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.rights-p {
+  background-color: rgb(31, 35, 39);
+  padding: 5px;
+  border-top: 1px solid rgba(124, 124, 124, 0.274);
+  display: flex;
+  color: white;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
