@@ -46,5 +46,5 @@ function showmenu(){
 }
 function closemenu(){
   var close = document.getElementById("menu");
-  close.style.top = "-100%";
+  close.style.top = "-5000px";
 }

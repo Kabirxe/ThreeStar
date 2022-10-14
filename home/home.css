@@ -60,7 +60,7 @@ svg{
 .links-area {
   width: 80%;
   display: flex;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .nav-links {
@@ -675,7 +675,7 @@ footer li {
       position: absolute;
       left: 0%;
       z-index: 12;
-      top: -100%;
+      top: -5000px;
       background-color: rgb(31, 35, 39);
       height: 100vh;
   }
