@@ -4,5 +4,5 @@ function showmenu(){
 }
 function closemenu(){
   var close = document.getElementById("menu");
-  close.style.top = "-500px";
+  close.style.top = "-5000px";
 }
