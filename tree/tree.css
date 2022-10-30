@@ -355,3 +355,77 @@ h2{
 .webmap ul li a:hover{
     color: #007406;
 }
+@media screen and (max-width: 768px) {
+    .logo h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nav-links{
+        width: 50%;
+        justify-content: space-around;
+    }
+    .nav-links li{
+        width: 100%;
+    }
+    .nav-links li a{
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .main h1{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .main h3{
+        font-size: 14px;
+    }
+    .p-selection button{
+        font-size: 10px;
+    }
+    .ccard h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ccard span{
+        font-size: 10px;
+    }
+    .cntnt1-txt h1 {
+        font-size: 20px;
+    }
+    .txt{
+        top: 30%;
+    }
+    .txt p span {
+        font-size: 15px;
+    }
+    .txt p{
+        font-size: 12px;
+    }
+    .div3 h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .div4 h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .div4 p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    .company-info h4{
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .company-info p{
+        font-size: 11px;
+    }
+    .webmap li a{
+        font-size: 12px;
+    }
+    .sm-links li a i{
+        font-size: 17px;
+    }
+}
